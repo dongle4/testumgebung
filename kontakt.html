@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="kontakt.css">
+</head>
+<body>
+  
+    <h1 id="überschrift">
+        KONTAKT
+    </h1>
+
+    
+    <div class="text-div">
+        <p class="text">
+            Wenn du eine Frage hast oder dir ein unverbindliches Angebot einholen möchtest,
+        dann melde dich einfach bei mir.
+        
+           </p>
+    </div>
+    <div id="kontaktdaten-div">
+
+        <form  id="kontaktdaten" action="https://formspree.io/f/mwkjvvnn" method="POST" >   
+          <input type="hidden" name="_next" value="https://anaelwirtl.at/danke">   
+          <input name="name" type="text" class="feedback-input" placeholder="Name" required>   
+          <input name="email" type="text" class="feedback-input" placeholder="Email" required>
+          <textarea name="text" class="feedback-input" placeholder="Nachricht" required></textarea>
+          <div id="datenschutz-div">
+            <label class="checkbox" for="myCheckboxId">
+              <input class="checkbox__input" type="checkbox" name="Datenschutzerklärung" id="myCheckboxId" required>
+            <div class="checkbox__box"></div>
+            </label>
+            <p id="datenschutz-p">
+              Ja, ich habe die <a href="datenschutz">Datenschutzerklärung</a> zur Kenntnis genommen und bin damit 
+              einverstanden, dass die von mir angegebenen Daten elektronisch erhoben und 
+              gespeichert werden. 
+            </p>
+          
+
+          </div>
+          <input id="senden-button" class="feedback-input" type="submit" value="Senden"/>
+        </form>
+
+    </div>
+
+    
+    
+<div class="text-div">
+    <p class="text">
+        Du möchtest mir direkt eine Email schreiben?
+        Hier ist meine Email-Adresse: kontakt@anaelwirtl.at
+      </p>
+</div>
+      
+
+    <div id="menü-div">
+        <a href="/">
+            <img id="menü-icon" src="icons/kontakt-home-icon.png">
+        </a>
+    </div>
+
+    <div id="footer-div">
+        <a href="impressum">
+          <button id="impressum">
+            Impressum
+          </button>
+        </a>
+        <a href="datenschutz">
+        <button id="datenschutz">
+          Datenschutz
+        </button>
+      </a>
+      </div>
+    
+   
+
+</body>
+</html>

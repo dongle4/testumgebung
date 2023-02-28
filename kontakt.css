@@ -1,0 +1,234 @@
+
+html{
+    height: 100%;
+
+
+}
+
+@font-face {
+    font-family:'Manrope';
+    src: url(fonts/Manrope-Regular.ttf);
+}
+body{
+    background-color: rgb(42, 42, 54);
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+#menü-div{
+    position: fixed;
+    width: 20%;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+
+ 
+   
+}
+
+#menü-icon{
+    max-height: 10rem;
+    opacity: 0.8;
+    transition:opacity 0.2s ;
+}
+
+
+#menü-icon:hover{
+    opacity: 1;
+}
+#überschrift{
+    color: rgb(255, 255, 255);
+    font-family:Manrope;
+    font-size: 6vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin: 0;
+}
+.text-div{
+font-family:Manrope; 
+font-weight: lighter;
+color: white;
+display: flex;
+justify-content: center;
+}
+.text{
+    max-width: 60%;
+}
+
+#kontaktdaten {
+    display: grid;
+    justify-content: center;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+    
+#datenschutz-div{
+    display:flex;
+    justify-content: baseline;
+    color: white;
+    font-family: Manrope;
+    font-size: 0.8em;
+    gap:1em;
+    
+    
+}
+.checkbox{
+    display: inline-flex;
+    justify-content: baseline;
+    cursor: pointer;
+    
+}
+
+.checkbox__input{
+    opacity: 0;
+    position: absolute;
+    transform: none;
+}
+
+.checkbox__box{
+    width: 1.25em;
+    height: 1.25em;
+    border-radius: 0.3em;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-right: 2em;
+   
+    transition: background 0.15s;
+}
+
+.checkbox__box::after{
+    content:'\2714';
+    color: white;
+    transform: scale(0);
+    transition: transform 0.15s;
+
+}
+
+.checkbox__input:checked + .checkbox__box{
+background: rgb(82, 71, 245);
+
+}
+.checkbox__input:checked + .checkbox__box::after{
+transform: scale(1);
+}
+
+
+#datenschutz-p{
+    color: white;
+    margin: 0;
+}
+
+#datenschutz-p > *{
+    color: white;
+}
+#datenschutz-link:hover{
+    cursor: pointer;
+}
+
+
+
+.feedback-input {
+    
+
+  color:rgb(255, 255, 255);
+  font-family: Manrope;
+  font-size: 1em;
+  border-radius: 5px;
+  background-color: transparent;
+  border:2px solid rgb(114, 114, 114);
+  transition: all 0.15s;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  outline: 0;
+  
+}
+
+.feedback-input:focus { border:2px solid #ffffff; }
+
+@media (max-width:30rem){
+    .feedback-input, #datenschutz-div{
+        max-width:70%;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    }
+
+textarea {
+  height: 7em;
+  line-height: 150%;
+  resize:vertical;
+}
+
+
+
+#senden-button{
+    border: none;
+    background-color: rgb(53, 53, 53);
+    padding-top:1em;
+    padding-bottom:1em;
+    margin-top: 2rem;
+    margin-bottom: 2em;
+    transition: all 0.3s;
+    font-weight: bold;
+    opacity: 0.7;
+}
+
+#senden-button:hover
+ { background:rgb(59, 59, 59); 
+    opacity: 1;
+    cursor: pointer;
+
+}
+
+@media (max-width:30rem){
+   #senden-button {
+        width:60%;
+
+        margin-left: auto;
+        margin-right: auto;
+
+
+    }
+    }
+
+
+
+
+
+#footer-div{
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3rem;
+    margin-top: 2rem;
+   
+
+
+    
+}
+#impressum, #datenschutz{
+    border: none;
+    background-color: rgb(42, 42, 54);
+    color: white;
+    font-family: Manrope;
+    font-size: 1rem;
+    opacity: 0.6;
+    transition: 0.15s;
+    
+}
+#impressum:hover, #datenschutz:hover{
+    opacity: 1;
+}
+
+
+

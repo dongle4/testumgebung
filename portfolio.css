@@ -1,0 +1,95 @@
+@font-face {
+  font-family:'Manrope';
+  src: url(fonts/Manrope-Regular.ttf);
+}
+
+
+#body {
+    min-height: 100vh;
+    margin: 0;
+    background-color:rgb(42, 42, 54);
+   
+}
+#h1{
+  color: rgb(218, 218, 218);
+  font-family: Manrope;
+  font-size: 6vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin: 0;
+
+}
+#menü-div {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    opacity: 0.8;
+    z-index: 100;
+    transition:opacity 0.2s ;
+    margin-bottom: auto;
+
+    
+}
+#menü-icon{
+  display: flex;
+  margin-bottom: auto;
+  max-height: 3.2rem;
+  margin: 0;
+
+}
+#menü-div:hover{
+  opacity: 1;
+}
+
+
+#gallery-div
+{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
+    align-content:start;
+    gap: 1.5em;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+
+}
+
+.gallery-children > * {
+    max-width: 100%;
+    height: auto
+       
+}
+
+.gallery-children > *{
+  margin-bottom: 2em;
+
+}
+.gallery-children > *{
+  border-radius:0.1rem ;
+}
+
+.gallery-children > *{
+  animation: fadeIn 2s forwards, slide-up 1s forwards;
+}
+
+@keyframes fadeIn {
+  from{opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+
+
+
+
